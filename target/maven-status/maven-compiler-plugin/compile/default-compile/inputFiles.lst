@@ -1,0 +1,12 @@
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/MainApp.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Database/DatabaseJSON.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Database/IDatabase.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Controllers/EmailController.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Timer/DBTimer.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Controllers/FXMLController.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Controllers/TimerController.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Controllers/ViewController.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Model/Time.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Database/DatabaseFactory.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Sender/Email.java
+/Users/tothalex/Documents/github/prk/src/main/java/inf/unideb/hu/prk/Model/TimeRecursive.java

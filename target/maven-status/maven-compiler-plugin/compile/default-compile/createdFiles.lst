@@ -1,0 +1,16 @@
+inf/unideb/hu/prk/Model/Time.class
+inf/unideb/hu/prk/Database/IDatabase.class
+inf/unideb/hu/prk/Controllers/ViewController.class
+inf/unideb/hu/prk/MainApp$1.class
+inf/unideb/hu/prk/Controllers/EmailController.class
+inf/unideb/hu/prk/MainApp$2.class
+inf/unideb/hu/prk/Controllers/TimerController.class
+inf/unideb/hu/prk/Controllers/TimerController$1.class
+inf/unideb/hu/prk/Sender/Email.class
+inf/unideb/hu/prk/Timer/DBTimer.class
+inf/unideb/hu/prk/Database/DatabaseJSON$1.class
+inf/unideb/hu/prk/Database/DatabaseFactory.class
+inf/unideb/hu/prk/Model/TimeRecursive.class
+inf/unideb/hu/prk/Database/DatabaseJSON.class
+inf/unideb/hu/prk/Controllers/FXMLController.class
+inf/unideb/hu/prk/Sender/Email$1.class

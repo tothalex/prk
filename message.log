@@ -1,0 +1,18 @@
+2018-05-13 20:50:56 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: File has been read!
+2018-05-13 20:50:56 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: /Users/tothalex/testEmpty.json file has been created!
+2018-05-13 20:50:56 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: File has been read!
+2018-05-13 20:50:56 [main] inf.unideb.hu.prk.Database.DatabaseJSON.insertDBTime()
+ERROR: List value is null!
+2018-05-13 20:50:57 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: File has been read!
+2018-05-13 20:50:57 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: File has been read!
+2018-05-13 20:50:57 [main] inf.unideb.hu.prk.Database.DatabaseJSON.load()
+INFO: /Users/tothalex/notexist.json file has been created!
+2018-05-13 20:50:57 [main] inf.unideb.hu.prk.Database.DatabaseJSON.insertDBTime()
+ERROR: List value is null!
+2018-05-13 20:50:57 [main] inf.unideb.hu.prk.Model.TimeRecursiveTest.getDuration2()
+INFO: 86400000

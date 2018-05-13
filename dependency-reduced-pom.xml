@@ -113,7 +113,11 @@
           </execution>
         </executions>
         <configuration>
-          <targetPercentage>0%</targetPercentage>
+          <targetPercentage>50%</targetPercentage>
+          <excludes>
+            <exclude>**/Controllers/*.java</exclude>
+            <exclude>**/Sender/*.java</exclude>
+          </excludes>
         </configuration>
       </plugin>
       <plugin>
@@ -175,9 +179,6 @@
         <artifactId>clover-maven-plugin</artifactId>
         <version>4.2.0</version>
         <configuration>
-          <excludes>
-            <exclude>inf.unideb.hu.prk.Controllers.InsertController</exclude>
-          </excludes>
           <generatePdf>true</generatePdf>
           <generateHtml>true</generateHtml>
         </configuration>

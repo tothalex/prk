@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"inf.unideb.hu.prk"},{"l":"inf.unideb.hu.prk.Controllers"},{"l":"inf.unideb.hu.prk.Database"},{"l":"inf.unideb.hu.prk.Model"},{"l":"inf.unideb.hu.prk.Sender"},{"l":"inf.unideb.hu.prk.Timer"}]

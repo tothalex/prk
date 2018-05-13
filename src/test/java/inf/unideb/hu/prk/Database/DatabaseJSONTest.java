@@ -15,7 +15,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 public class DatabaseJSONTest {
-       private static String path = "src/test/";
+    private static String path = System.getProperty("user.home") + "/";
     private static File file;
     private static Gson GSON = new Gson();
     private static List<Time> timeList;

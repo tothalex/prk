@@ -1,1 +1,0 @@
-typeSearchIndex = [{"p":"inf.unideb.hu.prk","l":"FXMLController"},{"p":"inf.unideb.hu.prk","l":"MainApp"}]

@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"inf.unideb.hu.prk"}]

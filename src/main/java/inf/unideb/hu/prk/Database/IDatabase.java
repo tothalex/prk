@@ -4,7 +4,11 @@ import inf.unideb.hu.prk.Model.Time;
 
 import java.util.List;
 
+/**
+ * Represents the database interface
+ */
 public interface IDatabase {
+    //CHECKSTYLE:OFF
     public void load();
     public void save();
     public void insertDBTime(Time time);

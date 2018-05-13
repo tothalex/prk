@@ -7,17 +7,27 @@ import javafx.beans.property.ReadOnlyStringWrapper;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import org.apache.commons.lang3.time.DurationFormatUtils;
+import org.pmw.tinylog.Logger;
 
+import java.io.IOException;
 import java.time.format.DateTimeFormatter;
 
 public class ViewController {
 
     private static DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
+    private double xOffset = 0;
+    private double yOffset = 0;
 
     @FXML
     private TableView<TimeRecursive> table;
@@ -27,7 +37,33 @@ public class ViewController {
 
     @FXML
     void btnInsert(ActionEvent event) {
-
+         try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("/fxml/insert.fxml"));
+            Scene scene = new Scene(fxmlLoader.load(), 400, 200);
+            Stage stage = new Stage();
+            stage.setTitle("Insert");
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UNDECORATED);
+            scene.setOnMousePressed(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                xOffset = event.getSceneX();
+                yOffset = event.getSceneY();
+            }
+        });
+        scene.setOnMouseDragged(new EventHandler<MouseEvent>() {
+            @Override
+            public void handle(MouseEvent event) {
+                stage.setX(event.getScreenX() - xOffset);
+                stage.setY(event.getScreenY() - yOffset);
+            }
+        });
+            stage.show();
+        } catch (IOException e) {
+            Logger.info(e);
+            return;
+        }
     }
 
     @FXML

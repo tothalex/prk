@@ -23,6 +23,12 @@ public class Email {
     private String to;
     private String host;
 
+    /**
+     * Construct
+     * @param from represents the email of the sender
+     * @param pass represents the password of the sender
+     * @param to represents the receiver email
+     */
     public Email(String from, String pass, String to) {
         this.from = from;
         this.pass = pass;
@@ -30,6 +36,11 @@ public class Email {
         this.host = "smtp.gmail.com";
     }
 
+    /**
+     * Sends the email
+     * @param content the content of the email(converted to csv file)
+     * @throws MessagingException if authentication error occurs
+     */
     public void send(String content) throws MessagingException {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");

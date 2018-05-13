@@ -16,12 +16,23 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+
+/**
+ * Represents JSON type local database
+ */
 public class DatabaseJSON implements IDatabase{
 
+    //CHECKSTYLE:OFF
     private static Gson GSON = new GsonBuilder().create();
     private String FILE_NAME ;
     private List<Time> times = null;
+    //CHECKSTYLE:ON
 
+    /**
+     * Construct a JSON database object.
+     * @param fileName represents the file name of the local file.
+     * @param backup if the value is true creates a backup file.
+     */
     public DatabaseJSON(String fileName, boolean backup){
         FILE_NAME = fileName + ".json";
         File file = new File(FILE_NAME);
@@ -36,6 +47,9 @@ public class DatabaseJSON implements IDatabase{
         }
     }
 
+    /**
+     * Loads the file content in memory.
+     */
     @Override
     public void load(){
         File file = new File(FILE_NAME );
@@ -62,6 +76,9 @@ public class DatabaseJSON implements IDatabase{
         }
     }
 
+    /**
+     * Saves the memory content in file.
+     */
     @Override
     public void save(){
         try(FileWriter fileWriter = new FileWriter(FILE_NAME )){
@@ -73,6 +90,10 @@ public class DatabaseJSON implements IDatabase{
         }
     }
 
+    /**
+     * Insert {@link Time} object in memory.
+     * @param time {@link Time}
+     */
     @Override
     public void insertDBTime(Time time){
         if (time != null)
@@ -85,6 +106,10 @@ public class DatabaseJSON implements IDatabase{
         };
     }
 
+    /**
+     * Get the current month data from the database.
+     * @return List which contains {@link Time} objects.
+     */
     @Override
     public List<Time> getDatabaseListCurrentMonth(){
         return times.stream()
@@ -95,6 +120,10 @@ public class DatabaseJSON implements IDatabase{
     private String quote(String s){ return "\"" + s.replace('\n', ';') + "\""; }
     private String formatDuration(long d) { return DurationFormatUtils.formatDuration(d, "HH:mm"); }
 
+    /**
+     * Get the current month total worked hours.
+     * @return '00h:00m' format string.
+     */
     @Override
     public String totalCurrentMonth(){
         return formatDuration(times.stream()
@@ -103,6 +132,10 @@ public class DatabaseJSON implements IDatabase{
                 .sum());
     }
 
+    /**
+     * Convert the current month data to csv.
+     * @return CSV String
+     */
     @Override
     public String formatCSV(){
         if(times.isEmpty()) return "";
@@ -127,6 +160,11 @@ public class DatabaseJSON implements IDatabase{
 
         return stringBuilder.toString();
     }
+
+    /**
+     * Return the data from the memory.
+     * @return List
+     */
     @Override
     public List<Time> getList(){ return times;}
 

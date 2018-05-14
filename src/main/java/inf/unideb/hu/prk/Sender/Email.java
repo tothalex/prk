@@ -16,6 +16,9 @@ import java.io.IOException;
 import java.io.Writer;
 import java.util.Properties;
 
+/**
+ * Class represents the address and password of the person who sends the email and the address of the receiver
+ */
 public class Email {
 
     private String from;

@@ -4,6 +4,9 @@ import java.beans.Transient;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+/**
+ * Class represeting the start time, end time, comments between the two time
+ */
 public class Time {
 
     //CHECKSTYLE:OFF

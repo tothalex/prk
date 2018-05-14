@@ -3,6 +3,9 @@ package inf.unideb.hu.prk.Model;
 import java.time.Duration;
 import java.time.LocalDateTime;
 
+/**
+ * Class represeting the start time, end time, comments between the two time for the tableview(the comments are splitted)
+ */
 public class TimeRecursive {
 
     //CHECKSTYLE:OFF

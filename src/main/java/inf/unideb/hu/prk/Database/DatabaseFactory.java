@@ -4,6 +4,9 @@ import org.pmw.tinylog.Logger;
 
 import java.io.File;
 
+/**
+ * Class which constructs IDatabase type of object.
+ */
 public class DatabaseFactory {
 
     /**

@@ -18,7 +18,7 @@ import java.util.stream.Collectors;
 
 
 /**
- * Represents JSON type local database
+ * Represents JSON type local database which implements the IDatabase interface {@link IDatabase}
  */
 public class DatabaseJSON implements IDatabase{
 
@@ -48,7 +48,9 @@ public class DatabaseJSON implements IDatabase{
     }
 
     /**
-     * Loads the file content in memory.
+     * Method for loading the database file in {@link Time} type list.
+     * If there's no such file then it will be created and empty file and an empty list.
+     * If there's a file and the method can't read the file, an empty list will be created.
      */
     @Override
     public void load(){
